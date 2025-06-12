@@ -8,7 +8,7 @@ int Right = nums.Length-1;
 while(Left<=Right)
 {
 
-    int mid = (Left+Right)/2;
+    int mid = Left+(Right-Left)/2;
     if(nums[mid]==target)
     {
 
