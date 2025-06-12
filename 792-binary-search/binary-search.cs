@@ -1,13 +1,29 @@
 public class Solution {
+
+    //Binary Search
     public int Search(int[] nums, int target) {
-        //Linear Search
-        for (int i = 0; i < nums.Length; i++)
-        {
-        if (nums[i] == target)
-        {
-            return i;
-        }
+        
+int Left=0;
+int Right = nums.Length-1;
+while(Left<=Right)
+{
+
+    int mid = (Left+Right)/2;
+    if(nums[mid]==target)
+    {
+
+        return mid;
     }
-    return -1;
+    else if(nums[mid]<target)
+    {
+        Left = mid+1;
+    }
+    else
+    {
+
+        Right = mid-1;
+    }
+}
+return -1;
     }
 }
