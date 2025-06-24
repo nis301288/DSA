@@ -1,7 +1,7 @@
 public class Solution {
     public int[] PlusOne(int[] digits) {
         
-  //Array Problem Statement
+  //Array Problem Statement... Time complexity is O(n) and Space Complexity in worst case is O(n) and best case O(1).
         int n = digits.Length;
          /* n-1 because array is running from right to left*/
         for(int i = n-1; i>=0; i--)
